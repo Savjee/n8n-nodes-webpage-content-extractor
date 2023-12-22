@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Savjee/n8n-nodes-readability"
+    "url": "https://github.com/Savjee/n8n-nodes-webpage-content-extractor"
   },
   "main": "index.js",
   "scripts": {
