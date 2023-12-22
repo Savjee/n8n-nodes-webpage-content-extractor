@@ -1,7 +1,7 @@
 {
   "name": "n8n-nodes-webpage-content-extractor",
   "version": "0.1.0",
-  "description": "",
+  "description": "Extracts the content from a given URL. Similar to the 'Reader' mode in your browser, it ignores headers, footers, banners, etc.",
   "keywords": [
     "n8n-community-node-package"
   ],
@@ -19,10 +19,10 @@
   "scripts": {
     "build": "tsc && gulp build:icons",
     "dev": "tsc --watch",
-    "format": "prettier nodes credentials --write",
-    "lint": "eslint nodes credentials package.json",
-    "lintfix": "eslint nodes credentials package.json --fix",
-    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    "format": "prettier nodes --write",
+    "lint": "eslint nodes package.json",
+    "lintfix": "eslint nodes package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes package.json"
   },
   "files": [
     "dist"

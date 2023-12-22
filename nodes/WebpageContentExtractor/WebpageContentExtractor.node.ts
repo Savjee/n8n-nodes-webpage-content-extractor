@@ -6,7 +6,7 @@ import {
     INodeExecutionData,
     INodeType,
     INodeTypeDescription,
-    WorkflowOperationError,
+    NodeOperationError,
 } from 'n8n-workflow';
 
 import {
@@ -34,13 +34,13 @@ export class WebpageContentExtractor implements INodeType {
 
         properties: [
             {
-                displayName: 'HTML code',
+                displayName: 'HTML Code',
                 name: 'html',
                 type: 'string',
                 required: true,
                 default:'',
                 placeholder: '',
-                description: 'Use the "HTTP Request" node to fetch the HTML code of a website and pass it here. ',
+                description: 'Use the "HTTP Request" node to fetch the HTML code of a website and pass it here',
             }
         ],
     };
@@ -55,7 +55,7 @@ export class WebpageContentExtractor implements INodeType {
             const article = new MozillaReadability(doc.window.document).parse();
          
             if(!article){
-                throw new WorkflowOperationError("Could not extract main contents of webpage.", this.getNode());
+                throw new NodeOperationError(this.getNode(), "Could not extract main contents of webpage.");
             }
 
             output.push({
