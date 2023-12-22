@@ -8,12 +8,10 @@ It's based on the [Readability library](https://github.com/mozilla/readability) 
 ---
 
 [Installation](#installation)  
-[Operations](#operations)  
 [Compatibility](#compatibility)  
 [Usage](#usage)  <!-- delete if not using this section -->  
 [Resources](#resources)  
 [Version history](#version-history)  <!-- delete if not using this section -->  
-
 
 
 ## Installation
