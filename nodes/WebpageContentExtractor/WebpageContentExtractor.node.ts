@@ -64,6 +64,7 @@ export class WebpageContentExtractor implements INodeType {
                     siteName: article.siteName,
                     length: article.length,
                     textContent: article.textContent,
+                    content: article.content,
                     title: article.title,
                     language: article.lang,
                     byline: article.byline,

@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-webpage-content-extractor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Extracts the content from a given URL. Similar to the 'Reader' mode in your browser, it ignores headers, footers, banners, etc.",
   "keywords": [
     "n8n-community-node-package"

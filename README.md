@@ -37,6 +37,12 @@ This allows you to configure all aspects of the web request (method, authenticat
 
 ## Version history
 
+### 0.1.2 (2024-11-20)
+* Add "content" attribute to output
+
+### 0.1.1
+* Fixing the README
+
 ### 0.1.0
 Initial release
 
