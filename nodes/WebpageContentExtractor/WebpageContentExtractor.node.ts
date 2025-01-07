@@ -1,11 +1,9 @@
 import {
     IExecuteFunctions,
-} from 'n8n-core';
-
-import {
     INodeExecutionData,
     INodeType,
     INodeTypeDescription,
+    NodeConnectionType,
     NodeOperationError,
 } from 'n8n-workflow';
 
@@ -21,7 +19,7 @@ import {
 export class WebpageContentExtractor implements INodeType {
     description: INodeTypeDescription = {
         displayName: 'Webpage Content Extractor',
-        name: 'WebpageContentExtractor',
+        name: 'webpageContentExtractor',
         icon: 'file:WebpageContentExtractor.svg',
         group: ['transform'],
         version: 1,
@@ -29,8 +27,8 @@ export class WebpageContentExtractor implements INodeType {
         defaults: {
             name: 'WebpageContentExtractor',
         },
-        inputs: ['main'],
-        outputs: ['main'],
+        inputs: ['main'] as NodeConnectionType[],
+        outputs: ['main'] as NodeConnectionType[],
 
         properties: [
             {

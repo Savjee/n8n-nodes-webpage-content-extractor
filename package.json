@@ -17,7 +17,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "tsc && gulp build:icons",
+    "build": "tsc && npm run build:images",
+    "build:images": "copyfiles nodes/**/*.svg nodes/**/*.png dist/",
     "dev": "tsc --watch",
     "format": "prettier nodes --write",
     "lint": "eslint nodes package.json",
@@ -38,9 +39,9 @@
     "@types/jsdom": "^21.1.6",
     "@types/request-promise-native": "~1.0.15",
     "@typescript-eslint/parser": "~5.45",
+    "copyfiles": "^2.4.1",
     "eslint-plugin-n8n-nodes-base": "^1.11.0",
-    "gulp": "^4.0.2",
-    "n8n-core": "*",
+    "n8n-core": "^1.20",
     "n8n-workflow": "*",
     "prettier": "^2.7.1",
     "typescript": "~4.8.4"
