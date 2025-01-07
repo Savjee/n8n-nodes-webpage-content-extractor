@@ -37,6 +37,9 @@ This allows you to configure all aspects of the web request (method, authenticat
 
 ## Version history
 
+### 0.1.3 (2025-01-07)
+* Updated dependencies & removed Gulp
+
 ### 0.1.2 (2024-11-20)
 * Add "content" attribute to output
 
